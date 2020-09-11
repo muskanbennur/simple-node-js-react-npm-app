@@ -1,10 +1,5 @@
 pipeline {                                                                                                       
-     agent {
-        docker {
-          image 'node:10.11.0-alpine'
-        }
-     }
-     stages {
+      stages {
         stage ("Build") {
            steps {
               export PATH=/usr/share/npm
